@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--让当前viewport的宽度等于设备的宽度，同时不允许用户手动缩放。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>管理页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/m.css">
+</head>
+<body>
+<!--/*/<th:block th:replace="admin/fragments :: script">/*/-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+    <script>
+
+        function checkAll(){
+            //alert(111);
+            $('.check_item').prop("checked",$('#checkAll').prop("checked"))
+        }
+        function checkItem() {
+            var flag=$('.check_item:checked').length==$('.check_item').length;
+            $('#checkAll').prop("checked",flag);
+        }
+        function deleteBatch () {
+            var ids="";
+            $.each($(".check_item:checked"),function () {
+                ids+=$(this).val()+"-";
+            });
+            ids=ids.substring(0,ids.length-1);
+            window.location.replace("/admin/blogs/deleteBatch/"+ids);
+        }
+        $(document).ready(function(){
+            /*$('#checkAll').click(function () {
+                alert(111);
+                $('.check_item').prop("checked",$(this).prop("checked"))
+            });*/
+
+
+            //打开或合并菜单
+            $('.menu-toggle').click(function () {
+                //去除或加上对应的class
+                $('.m-item').toggleClass('m-mobile-hide');
+            });
+
+            $('.ui.dropdown').dropdown({
+                on:'hover'
+            });
+            window.comepage= function(obj){
+                $("[name='page']").val($(obj).data("page"));
+                loaddata();
+            };
+            $('#searchBtn').click(function () {
+                $("[name='page']").val(0);
+                loaddata();
+            });
+
+
+            function loaddata() {
+                $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
+                    title:$("[name='title']").val(),
+                    typeId:$("[name='typeId']").val(),
+                    articleType:$("[name='articleType']").val(),
+                    page:$("[name='page']").val()
+                });
+            };
+
+            $(function () {
+                var timeout=setTimeout(function () {
+                    $('.message .close')
+                        .closest('.message')
+                        .transition('fade');
+                }, 100);
+            });
+            $('#clear-btn0')
+                .on('click', function() {
+                    $("[name='title']").val('');
+                    ;
+                })
+            ;
+            $('#clear-btn')
+                .on('click', function() {
+                    $('.ui.type.dropdown')
+                        .dropdown('clear')
+                    ;
+                })
+            ;
+            $('#clear-btn2')
+                .on('click', function() {
+                    $('.ui.articleType.dropdown')
+                        .dropdown('clear')
+                    ;
+                })
+            ;
+
+        });
+    </script>
+    <!--导航 -->
+    <!--inverted反转颜色,不加就白色，加就黑色，其他颜色可以在后面加，
+    attached去除圆角-->
+    <nav th:replace="admin/fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <!--反色菜单-->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item">后台管理</h2>
+                <!--m-mobile-hide手机端隐藏-->
+                <a href="" class="active m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                            zzf
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="m-item right item m-mobile-hide">
+                    <div class="ui icon input">
+                        <input class="transparent" type="text" placeholder="搜索..." style="width: 300px">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <a href="#" class="ui menu-toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" th:href="@{/admin/blogs/input}" class="item">新增</a>
+                <a href="#" th:href="@{/admin/blogs}" class="active item">列表</a>
+            </div>
+        </div>
+    </div>
+    <!--中间部分-->
+    <div class="m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">
+                    提示:
+                </div>
+                <p th:text="${message}">操作成功</p>
+            </div>
+            <div class="ui m-opacity-mini segment form">
+                <input type="hidden" name="page">
+                <div class="fields">
+                    <div class="field">
+                        <div class="ui labeled action input">
+                            <input type="text" name="title" placeholder="标题关键字">
+                            <button id="clear-btn0" class="ui compact button">清除</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui labeled action input">
+                            <div class="ui type selection dropdown">
+                                <input type="hidden" name="typeId">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">分类</div>
+                                <div class="menu">
+                                    <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">学习笔记</div>
+                                    <!--/*-->
+                                    <div class="item" data-value="2">心路历程</div>
+                                    <!--*/-->
+                                </div>
+                            </div>
+                            <button id="clear-btn" class="ui compact button">清除</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui labeled action input">
+                            <div class="ui articleType selection dropdown">
+                                <input type="hidden" name="articleType">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">文章类型</div>
+                                <div class="menu">
+                                    <div class="item" data-value="原创">原创</div>
+                                    <div class="item" data-value="转载">转载</div>
+                                </div>
+                            </div>
+                            <button id="clear-btn2" class="ui compact button">清除</button>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="field">
+                            <button id="searchBtn" class="ui blue button"><i class="search icon"></i>搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="table-container">
+                <table th:fragment="blogList" class="ui selectable table">
+                    <thead>
+                    <tr>
+                        <th><input onclick="checkAll()" id="checkAll" type="checkbox"></th>
+                        <th>序号</th>
+                        <th>标题</th>
+                        <th>分类</th>
+                        <th>文章类型</th>
+                        <th>文章状态</th>
+                        <th>更新时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="blog,item : ${page.content}">
+                        <td><input onclick="checkItem()" class="check_item" type="checkbox" th:value="${blog.id}"></td>
+                        <td th:text="${item.count}">1</td>
+                        <td th:text="${blog.title}">Java从入门到精通</td>
+                        <td th:text="${blog.type.name}">学习笔记</td>
+                        <td th:text="${blog.articleType}">原创</td>
+                        <td th:text="${blog.published} ? '发布' : '草稿'">发布</td>
+                        <td th:text="${blog.updateTime}">2021-02-09 08:45:20</td>
+                        <td>
+                            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="ui mini violet button"><i class="eye icon"></i> 查看</a>
+                            <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal button"><i class="edit icon"></i> 修改</a>
+                            <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red button"><i class="delete icon"></i> 删除</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th colspan="8">
+                            <div class="ui left floated pagination small menu" th:if="${page.totalPages>1}">
+                                <a onclick="comepage(this)" th:attr="data-page=${page.number}-1" class="icon item" th:unless="${page.first}">
+                                    <i class="left chevron icon"></i>
+                                </a>
+                                <a th:each="i : ${#numbers.sequence(1, page.totalPages)}" th:class="(${i-1}==${page.number})? 'ui blue item active':'item'"  th:text="${i}"
+                                   onclick="comepage(this)" th:attr="data-page=${i-1}"></a>
+                                <a onclick="comepage(this)" th:attr="data-page=${page.number}+1" class="icon item" th:unless="${page.last}">
+                                    <i class="right chevron icon"></i>
+                                </a>
+                            </div>
+                            <a onclick="deleteBatch()" href="#" id="deleteBatch" class="ui small right floated orange button"><i class="trash icon"></i>批量删除</a>
+                        </th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <footer th:replace="admin/fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <!--容器的对齐方式-->
+        <!--居中-->
+        <div class="ui center aligned container">
+            <!--以网格的形式分开一列一列,会分为16部分-->
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">链接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Github</a>
+                        <a href="#" class="item">CSDN</a>
+                        <a href="#" class="item">Gitee</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">QQ</a>
+                        <a href="#" class="item">Email</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">关于我</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">爱学习，爱代码的小菜鸡</p>
+                </div>
+            </div>
+            <!--分割线-->
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021 Designed By ZZF</p>
+        </div>
+    </footer>
+</body>
+</html>

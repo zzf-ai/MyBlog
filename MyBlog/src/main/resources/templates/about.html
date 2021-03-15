@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--让当前viewport的宽度等于设备的宽度，同时不允许用户手动缩放。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>关于博主</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/m.css">
+</head>
+<body>
+<!--/*/<th:block th:replace="fragments :: script">/*/-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+    <script>
+
+        $(document).ready(function(){
+            //打开或合并菜单
+            $('.menu-toggle').click(function () {
+                //去除或加上对应的class
+                $('.m-item').toggleClass('m-mobile-hide');
+            });
+            $('.wechat').popup({
+               popup:$('.wechat-qr'),
+               position:'bottom center'
+            });
+            $('.qq').popup({
+                popup:$('.qq-qr'),
+                position:'bottom center'
+            });
+        });
+    </script>
+    <!--导航 -->
+    <!--inverted反转颜色,不加就白色，加就黑色，其他颜色可以在后面加，
+    attached去除圆角-->
+    <nav th:replace="fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <!--反色菜单-->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item">ZZF</h2>
+                <!--m-mobile-hide手机端隐藏-->
+                <a href="" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="" class="active m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="m-item right item m-mobile-hide">
+                    <div class="ui icon input">
+                        <input class="transparent" type="text" placeholder="搜索..." style="width: 300px">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu-toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中间部分-->
+    <div class="m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <img src="https://picsum.photos/id/1005/800/600" alt="" class="ui rounded image">
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui center aligned header">关于博主</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">zzf，Java开发者，热爱学习，热爱编程，渴望变强！！！</p>
+                        <p>人生苦短，我学Java。</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui center aligned header">个性标签</div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            宅男
+                        </div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            编程
+                        </div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            爱听音乐
+                        </div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            B站冲浪
+                        </div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui center aligned header">技术标签</div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            Java
+                        </div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            MySQL
+                        </div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            Linux
+                        </div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            后端
+                        </div>
+                        <div class="ui red tag label m-margin-tb-tiny tiny">
+                            数学
+                        </div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="https://github.com/zzf-ai" target="_blank" class="ui circular icon button"><i class="github icon"></i> </a>
+                        <a href="#" class="wechat ui circular icon button"><i class="weixin icon"></i> </a>
+                        <a href="#" class="qq ui circular icon button"><i class="qq icon"></i> </a>
+                    </div>
+
+                    <div class="ui wechat-qr flowing popup transition hidden">
+                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
+                    </div>
+                    <div class="ui qq-qr flowing popup transition hidden">
+                        <img src="../static/images/qq.jpg" th:src="@{/images/qq.jpg}" alt="" class="ui rounded image" style="width: 200px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <footer th:replace="fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <!--容器的对齐方式-->
+        <!--居中-->
+        <div class="ui center aligned container">
+            <!--以网格的形式分开一列一列,会分为16部分-->
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">链接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Github</a>
+                        <a href="#" class="item">CSDN</a>
+                        <a href="#" class="item">Gitee</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">QQ</a>
+                        <a href="#" class="item">Email</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">关于网站技术</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">
+                        前端：semantic-ui
+                        后端：SpringBoot+thymeleaf+Jpa+MySql
+                        插件：editormd(markdown编辑器)、qrcode(二维码生成)、tocbot(目录生成)
+                    </p>
+                </div>
+            </div>
+            <!--分割线-->
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021 Designed By ZZF</p>
+        </div>
+    </footer>
+</body>
+</html>

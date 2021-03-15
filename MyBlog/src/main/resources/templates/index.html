@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--让当前viewport的宽度等于设备的宽度，同时不允许用户手动缩放。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/m.css">
+</head>
+<body>
+<!--/*/<th:block th:replace="fragments :: script">/*/-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+    <script>
+
+        $(document).ready(function(){
+            //打开或合并菜单
+            $('.menu-toggle').click(function () {
+                //去除或加上对应的class
+                $('.m-item').toggleClass('m-mobile-hide');
+            });
+        });
+    </script>
+    <!--导航 -->
+    <!--inverted反转颜色,不加就白色，加就黑色，其他颜色可以在后面加，
+    attached去除圆角-->
+    <nav th:replace="fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <!--反色菜单-->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item">ZZF</h2>
+                <!--m-mobile-hide手机端隐藏-->
+                <a href="" class="active m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="m-item right item m-mobile-hide">
+                    <div class="ui icon input">
+                        <input class="transparent" type="text" placeholder="搜索..." style="width: 300px">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu-toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中间部分-->
+    <div class="m-padded-tb-large m-container">
+            <div class="ui container">
+                <div class="ui stackable grid">
+                    <!--左边博客列表-->
+                    <div class="eleven wide column">
+                        <!--标准分段-->
+                        <div class="ui top attached segment">
+                            <!--两列网格，内容居中-->
+                            <div class="ui middle aligned two column grid">
+                                <div class="column">
+                                    <h3 class="ui black header">博客</h3>
+                                </div>
+                                <div class="right aligned column">
+                                    共<h2 class="ui orange header m-text-thin m-inline-block" th:text="${page.totalElements}">&nbsp;14&nbsp;</h2>篇
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--博客-->
+                        <div class="ui attached segment">
+                            <div class="ui m-padded-tb-lr-small vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
+                                <div class="ui middle aligned mobile reversed stackable grid">
+                                    <div class="eleven wide column">
+                                        <h3 class="ui header"><a th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">Hello World</a> </h3>
+                                        <p class="m-text" th:text="|${blog.description}...|">
+                                            发hi的降幅附件欧迪芬将得分咯反馈给皮肤，法律角度看风景的房间蒂凡尼的
+                                            的机房接地房间都疯狂的疯狂的
+                                        </p>
+                                        <div class="ui grid">
+                                            <div class="eleven wide column">
+                                                <div class="ui mini horizontal link list">
+                                                    <div class="item">
+                                                        <img src="https://picsum.photos/id/1/100/100" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                                                        <div class="content"><a href="#" class="header m-text-bold" th:text="${blog.user.username}">ZZF</a> </div>
+
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="content"><i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2021-02-09</span></div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="content"><i class="eye icon"></i><span th:text="${blog.views}">2000</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">
+                                                    Java基础
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="five wide column">
+                                        <!--target="_blank"在点击链接的时候需要打开新的页面-->
+                                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+                                            <img src="https://picsum.photos/id/0/800/450" th:src="@{${blog.topPicture}}" alt="" class="ui rounded image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/*-->
+                            <div class="ui m-padded-tb-lr-small vertical segment m-padded-tb-large">
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="eleven wide column">
+                                        <h3 class="ui header">Hello World</h3>
+                                        <p class="m-text">
+                                            发hi的降幅附件欧迪芬将得分咯反馈给皮肤，法律角度看风景的房间蒂凡尼的
+                                            的机房接地房间都疯狂的疯狂的
+                                        </p>
+                                        <div class="ui grid">
+                                            <div class="eleven wide column">
+                                                <div class="ui mini horizontal link list">
+                                                    <div class="item">
+                                                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                                                        <div class="content"><a href="#" class="header">ZZF</a> </div>
+
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="calendar icon"></i>2021-02-09
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="eye icon"></i>2000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">
+                                                    Java基础
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="five wide column">
+                                        <!--target="_blank"在点击链接的时候需要打开新的页面-->
+                                        <a href="#" target="_blank">
+                                            <img src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui m-padded-tb-lr-small vertical segment m-padded-tb-large">
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="eleven wide column">
+                                        <h3 class="ui header">Hello World</h3>
+                                        <p class="m-text">
+                                            发hi的降幅附件欧迪芬将得分咯反馈给皮肤，法律角度看风景的房间蒂凡尼的
+                                            的机房接地房间都疯狂的疯狂的
+                                        </p>
+                                        <div class="ui grid">
+                                            <div class="eleven wide column">
+                                                <div class="ui mini horizontal link list">
+                                                    <div class="item">
+                                                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                                                        <div class="content"><a href="#" class="header">ZZF</a> </div>
+
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="calendar icon"></i>2021-02-09
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="eye icon"></i>2000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">
+                                                    Java基础
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="five wide column">
+                                        <!--target="_blank"在点击链接的时候需要打开新的页面-->
+                                        <a href="#" target="_blank">
+                                            <img src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui m-padded-tb-lr-small vertical segment m-padded-tb-large">
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="eleven wide column">
+                                        <h3 class="ui header">Hello World</h3>
+                                        <p class="m-text">
+                                            发hi的降幅附件欧迪芬将得分咯反馈给皮肤，法律角度看风景的房间蒂凡尼的
+                                            的机房接地房间都疯狂的疯狂的
+                                        </p>
+                                        <div class="ui grid">
+                                            <div class="eleven wide column">
+                                                <div class="ui mini horizontal link list">
+                                                    <div class="item">
+                                                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                                                        <div class="content"><a href="#" class="header">ZZF</a> </div>
+
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="calendar icon"></i>2021-02-09
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="eye icon"></i>2000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">
+                                                    Java基础
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="five wide column">
+                                        <!--target="_blank"在点击链接的时候需要打开新的页面-->
+                                        <a href="#" target="_blank">
+                                            <img src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui m-padded-tb-lr-small vertical segment m-padded-tb-large">
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="eleven wide column">
+                                        <h3 class="ui header">Hello World</h3>
+                                        <p class="m-text">
+                                            发hi的降幅附件欧迪芬将得分咯反馈给皮肤，法律角度看风景的房间蒂凡尼的
+                                            的机房接地房间都疯狂的疯狂的
+                                        </p>
+                                        <div class="ui grid">
+                                            <div class="eleven wide column">
+                                                <div class="ui mini horizontal link list">
+                                                    <div class="item">
+                                                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                                                        <div class="content"><a href="#" class="header">ZZF</a> </div>
+
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="calendar icon"></i>2021-02-09
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="eye icon"></i>2000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">
+                                                    Java基础
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="five wide column">
+                                        <!--target="_blank"在点击链接的时候需要打开新的页面-->
+                                        <a href="#" target="_blank">
+                                            <img src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--*/-->
+                        </div>
+                        <!--放分页条-->
+                        <div class="ui bottom attached segment">
+                            <div class="ui center aligned container">
+                                <div class="ui borderless pagination stackable menu" th:if="${page.totalPages>1}">
+                                    <a th:href="@{/(page=${page.number}-1)}" class="icon item" th:unless="${page.first}">
+                                        <i class="left chevron icon"></i>
+                                    </a>
+                                    <a th:each="i : ${#numbers.sequence(1, page.totalPages)}" th:class="(${i-1}==${page.number})? 'ui blue item active':'item'"  th:text="${i}"
+                                       th:href="@{/(page=${i-1})}" ></a>
+                                    <a th:href="@{/(page=${page.number}+1)}" class="icon item" th:unless="${page.last}">
+                                        <i class="right chevron icon"></i>
+                                    </a>
+                                    <!--/*-->
+                                    <a class="item">
+                                        <i class="left arrow icon"></i> 上一页
+                                    </a>
+                                    <a class="item">1</a>
+                                    <a class="item">2</a>
+                                    <a class="item">3</a>
+                                    <a class="item">4</a>
+                                    <a class="item">5</a>
+                                    <a class="item">6</a>
+                                    <a class="item">
+                                        下一页&nbsp;<i class="icon right arrow"></i>
+                                    </a>
+                                    <!--*/-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="five wide column">
+                        <!--分类-->
+                        <div class="ui segments">
+                            <div class="ui secondary segment">
+                                <div class="ui two column grid">
+                                    <div class="column m-text-bold">
+                                        <i class="idea icon"></i>分类
+                                    </div>
+                                    <div class="right aligned column">
+                                        <a href="#" th:href="@{/types/-1}" target="_blank">more<i class="angle double right icon"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui segment">
+                                <!--垂直菜单-->
+                                <div class="ui fluid vertical menu">
+                                    <a class="item" th:each="type : ${types}">
+                                        <span th:text="${type.name}">学习笔记</span>
+                                        <div class="ui label" th:text="${#arrays.length(type.blogs)}">51</div>
+                                    </a>
+                                    <!--/*-->
+                                    <a class="item">
+                                        学习笔记
+                                        <div class="ui label">51</div>
+                                    </a>
+                                    <a class="item">
+                                        学习笔记
+                                        <div class="ui label">51</div>
+                                    </a>
+                                    <a class="item">
+                                        学习笔记
+                                        <div class="ui label">51</div>
+                                    </a>
+                                    <a class="item">
+                                        学习笔记
+                                        <div class="ui label">1</div>
+                                    </a>
+                                    <a class="item">
+                                        学习笔记
+                                        <div class="ui label">51</div>
+                                    </a>
+                                    <!--*/-->
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--标签-->
+                        <div class="ui segments m-margin-top-large">
+                            <div class="ui secondary segment">
+                                <div class="ui two column grid">
+                                    <div class="column m-text-bold">
+                                        <i class="tags icon"></i>标签
+                                    </div>
+                                    <div class="right aligned column">
+                                        <a href="#" th:href="@{/tags/-1}" target="_blank">more<i class="angle double right icon"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui segment">
+                                <a class="ui tag label m-margin-tb-tiny" href="#" target="_blank" th:each="tag : ${tags}">
+                                    <span th:text="${tag.name}">Java</span><div class="detail" th:text="${#arrays.length(tag.blogs)}">20</div>
+                                </a>
+                                <!--/*-->
+                                <a class="ui tag label m-margin-tb-tiny" href="#" target="_blank">
+                                    Java<div class="detail">20</div>
+                                </a>
+                                <a class="ui tag label m-margin-tb-tiny" href="#" target="_blank">
+                                    Java<div class="detail">20</div>
+                                </a>
+                                <a class="ui tag label m-margin-tb-tiny" href="#" target="_blank">
+                                    数学建模<div class="detail">20</div>
+                                </a>
+                                <!--*/-->
+                            </div>
+                        </div>
+
+                        <!--最新博客-->
+                        <div class="ui segments m-margin-top-large">
+                            <div class="ui secondary segment m-text-bold">
+                                <i class="bookmark icon"></i>最新文章
+                            </div>
+                            <div class="ui segment" th:each="blog : ${lastestBlogs}">
+                                <a class="m-black" href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" th:text="${blog.title}">
+                                    Java从入门到精通
+                                </a>
+                            </div>
+                            <!--/*-->
+                            <div class="ui segment">
+                                <a class="m-black" href="#" target="_blank">
+                                    Java从入门到精通
+                                </a>
+                            </div>
+                            <div class="ui segment">
+                                <a class="m-black" href="#" target="_blank">
+                                    Java从入门到精通
+                                </a>
+                            </div>
+                            <div class="ui segment">
+                                <a class="m-black" href="#" target="_blank">
+                                    Java从入门到精通
+                                </a>
+                            </div>
+                            <div class="ui segment">
+                                <a class="m-black" href="#" target="_blank">
+                                    Java从入门到精通
+                                </a>
+                            </div>
+                            <div class="ui segment">
+                                <a class="m-black" href="#" target="_blank">
+                                    Java从入门到精通
+                                </a>
+                            </div>
+                            <!--*/-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--底部-->
+    <footer th:replace="fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <!--容器的对齐方式-->
+        <!--居中-->
+        <div class="ui center aligned container">
+            <!--以网格的形式分开一列一列,会分为16部分-->
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">链接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Github</a>
+                        <a href="#" class="item">CSDN</a>
+                        <a href="#" class="item">Gitee</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">QQ</a>
+                        <a href="#" class="item">Email</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">关于我</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">爱学习，爱代码的小菜鸡</p>
+                </div>
+            </div>
+            <!--分割线-->
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021 Designed By ZZF</p>
+        </div>
+    </footer>
+</body>
+</html>

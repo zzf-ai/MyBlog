@@ -1,0 +1,1370 @@
+2021-02-23 21:47:13.479  INFO 8056 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 8056 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 21:47:13.510 DEBUG 8056 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 21:47:13.510  INFO 8056 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 21:47:13.612  INFO 8056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-23 21:47:13.613  INFO 8056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-23 21:47:15.375  INFO 8056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 21:47:15.576  INFO 8056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190 ms. Found 5 JPA repository interfaces.
+2021-02-23 21:47:17.256  INFO 8056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 21:47:17.272  INFO 8056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 21:47:17.272  INFO 8056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 21:47:17.510  INFO 8056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 21:47:17.510  INFO 8056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3896 ms
+2021-02-23 21:47:17.920  INFO 8056 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 21:47:18.042  INFO 8056 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-23 21:47:18.296  INFO 8056 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-23 21:47:18.559  INFO 8056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-23 21:47:19.014  INFO 8056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-23 21:47:19.045  INFO 8056 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 21:47:21.007  INFO 8056 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 21:47:21.023  INFO 8056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 21:47:21.171  INFO 8056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 21:47:22.853  WARN 8056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 21:47:23.478  INFO 8056 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 21:47:23.702  INFO 8056 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 21:47:23.854  WARN 8056 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 21:47:24.534  WARN 8056 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-02-23 21:47:24.550  INFO 8056 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 21:47:24.550  INFO 8056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 21:47:24.550  INFO 8056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-23 21:47:24.581  INFO 8056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-23 21:47:24.581  INFO 8056 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-23 21:47:24.603  INFO 8056 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-23 21:47:24.637 ERROR 8056 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-02-23 21:51:06.347  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 21:51:06.347 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 21:51:06.347  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 21:51:06.449  INFO 14700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-23 21:51:06.449  INFO 14700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-23 21:51:07.739  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 21:51:07.903  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 5 JPA repository interfaces.
+2021-02-23 21:51:09.286  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 21:51:09.302  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 21:51:09.318  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 21:51:09.560  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 21:51:09.560  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3111 ms
+2021-02-23 21:51:09.950  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 21:51:10.043  INFO 14700 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-23 21:51:10.281  INFO 14700 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-23 21:51:10.456  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-23 21:51:10.774  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-23 21:51:10.805  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 21:51:12.363  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 21:51:12.378  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 21:51:12.510  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 21:51:14.346  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 21:51:14.735  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 21:51:15.198  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 21:51:15.352  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 21:51:16.160  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 21:51:16.185  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 10.702 seconds (JVM running for 12.756)
+2021-02-23 21:51:27.126  INFO 14700 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-23 21:51:27.127  INFO 14700 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-23 21:51:27.129  INFO 14700 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-23 21:51:27.205  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.toIndex', args=[Page request [number: 0, size 4, sort: updateTime: DESC], {}]}
+2021-02-23 21:51:27.497  WARN 14700 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-23 21:51:27.555  WARN 14700 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-23 21:51:27.640  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:index
+2021-02-23 21:53:32.567  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 21:53:32.617  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 21:53:33.133  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:53:33.210  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:55:02.912  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 21:55:02.927  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 21:55:03.310  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:55:03.316  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:55:30.323  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=测试, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 21:55:30.333  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 21:55:30.362  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:55:30.372  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:56:11.929  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=测试, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 21:56:11.939  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 21:56:11.952  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:56:11.958  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:57:43.233  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 21:57:43.253  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 21:57:43.598  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:57:43.604  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:57:46.130  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 21:57:46.139  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 21:57:46.148  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:57:46.154  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:57:48.065  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 21:57:48.074  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 21:57:48.085  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:57:48.091  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:58:02.151  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 21:58:02.169  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 21:58:02.545  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:58:02.551  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:58:04.850  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 21:58:04.860  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 21:58:04.873  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:58:04.878  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:58:06.825  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 21:58:06.841  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 21:58:07.168  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:58:07.172  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:58:57.652  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 21:58:57.669  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 21:58:58.027  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:58:58.031  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:59:01.307  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 21:59:01.317  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 21:59:01.330  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:59:01.335  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:59:29.534  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 21:59:29.552  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 21:59:29.975  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:59:29.980  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 21:59:39.371  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 21:59:39.382  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 21:59:39.394  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 21:59:39.401  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:00:02.655  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:00:02.669  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:00:03.000  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:00:03.005  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:00:06.939  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 22:00:06.949  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:00:06.959  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:00:06.964  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:00:10.248  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:00:10.265  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:00:10.604  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:00:10.610  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:01:26.368  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:01:26.384  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:01:26.747  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:01:26.751  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:01:42.081  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=测试, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@2bc416df]}
+2021-02-23 22:01:42.090  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:01:42.104  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:01:42.109  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:03:13.707  INFO 14700 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:03:13.710  INFO 14700 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:03:13.717  INFO 14700 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-23 22:03:13.729  INFO 14700 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-23 22:03:14.063  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:03:14.063 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:03:14.063  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:03:14.514  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:03:14.583  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:03:15.133  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:03:15.133  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:03:15.133  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:03:15.193  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:03:15.193  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1130 ms
+2021-02-23 22:03:15.358  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:03:15.363  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-02-23 22:03:15.373  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-02-23 22:03:15.373  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:03:15.629  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:03:15.630  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:03:15.689  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:03:16.443  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:03:16.656  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:03:16.734  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:03:16.799  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:03:17.043  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:03:17.043  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 3.071 seconds (JVM running for 733.617)
+2021-02-23 22:03:17.053  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:03:19.680  INFO 14700 --- [Thread-34] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:03:19.685  INFO 14700 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:03:19.687  INFO 14700 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-02-23 22:03:19.694  INFO 14700 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-02-23 22:03:20.118  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:03:20.119 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:03:20.119  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:03:20.545  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:03:20.641  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:03:21.183  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:03:21.183  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:03:21.183  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:03:21.262  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:03:21.262  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1138 ms
+2021-02-23 22:03:21.430  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:03:21.440  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-02-23 22:03:21.445  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-02-23 22:03:21.446  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:03:21.704  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:03:21.704  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:03:21.780  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:03:22.577  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:03:22.752  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:03:22.853  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:03:22.937  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:03:23.230  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:03:23.239  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 3.188 seconds (JVM running for 739.803)
+2021-02-23 22:03:23.241  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:03:23.319  INFO 14700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-23 22:03:23.321  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-23 22:03:23.322  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-23 22:03:23.329  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:03:23.363  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:03:23.762  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:03:23.781  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:03:37.294  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=测试, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@fb790f7]}
+2021-02-23 22:03:37.306  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:03:37.331  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:03:37.336  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:07:36.644  INFO 14700 --- [Thread-39] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:07:36.645  INFO 14700 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:07:36.647  INFO 14700 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-02-23 22:07:36.652  INFO 14700 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-02-23 22:07:36.987  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:07:36.987 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:07:36.987  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:07:37.442  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:07:37.532  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:07:37.995  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:07:37.997  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:07:37.997  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:07:38.048  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:07:38.048  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1056 ms
+2021-02-23 22:07:38.230  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:07:38.242  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-02-23 22:07:38.249  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-02-23 22:07:38.249  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:07:38.483  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:07:38.483  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:07:38.532  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:07:39.265  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:07:39.480  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:07:39.553  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:07:39.622  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:07:39.835  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:07:39.843  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 2.911 seconds (JVM running for 996.408)
+2021-02-23 22:07:39.847  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:07:42.453  INFO 14700 --- [Thread-44] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:07:42.453  INFO 14700 --- [Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:07:42.453  INFO 14700 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-02-23 22:07:42.463  INFO 14700 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-02-23 22:07:42.833  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:07:42.833 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:07:42.833  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:07:43.223  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:07:43.303  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:07:43.788  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:07:43.788  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:07:43.788  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:07:43.853  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:07:43.853  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
+2021-02-23 22:07:44.007  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:07:44.012  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-02-23 22:07:44.017  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-02-23 22:07:44.017  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:07:44.263  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:07:44.263  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:07:44.332  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:07:45.013  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:07:45.177  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:07:45.248  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:07:45.307  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:07:45.532  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:07:45.532  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 2.768 seconds (JVM running for 1002.105)
+2021-02-23 22:07:45.543  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:07:49.782  INFO 14700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-23 22:07:49.784  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-23 22:07:49.786  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-23 22:07:49.794  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:07:49.828  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:07:50.266  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:07:50.288  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:08:09.840  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=48, email=null, content=测试1, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@5e6d51e2]}
+2021-02-23 22:08:09.950  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:08:09.974  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:08:09.984  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:08:10.011 ERROR 14700 --- [http-nio-8080-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-10] Exception processing template "blog::[commentList]": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'" (template: "blog" - line 623, col 60)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'" (template: "blog" - line 623, col 60)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: Expression [#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'] @13: EL1051E: Unexpectedly ran out of arguments
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.internalException(InternalSpelExpressionParser.java:1041)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.consumeArguments(InternalSpelExpressionParser.java:477)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodArgs(InternalSpelExpressionParser.java:441)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodOrProperty(InternalSpelExpressionParser.java:760)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatDottedNode(InternalSpelExpressionParser.java:397)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatNode(InternalSpelExpressionParser.java:371)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPrimaryExpression(InternalSpelExpressionParser.java:352)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatUnaryExpression(InternalSpelExpressionParser.java:344)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPowerIncDecExpression(InternalSpelExpressionParser.java:303)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatProductExpression(InternalSpelExpressionParser.java:281)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatSumExpression(InternalSpelExpressionParser.java:263)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatRelationalExpression(InternalSpelExpressionParser.java:218)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalAndExpression(InternalSpelExpressionParser.java:205)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalOrExpression(InternalSpelExpressionParser.java:192)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatExpression(InternalSpelExpressionParser.java:153)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:131)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:52)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:43)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.getExpression(SPELVariableExpressionEvaluator.java:374)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.obtainComputedSpelExpression(SPELVariableExpressionEvaluator.java:315)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:182)
+	... 76 common frames omitted
+
+2021-02-23 22:08:10.018 ERROR 14700 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelParseException: Expression [#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'] @13: EL1051E: Unexpectedly ran out of arguments
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.internalException(InternalSpelExpressionParser.java:1041)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.consumeArguments(InternalSpelExpressionParser.java:477)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodArgs(InternalSpelExpressionParser.java:441)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodOrProperty(InternalSpelExpressionParser.java:760)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatDottedNode(InternalSpelExpressionParser.java:397)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatNode(InternalSpelExpressionParser.java:371)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPrimaryExpression(InternalSpelExpressionParser.java:352)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatUnaryExpression(InternalSpelExpressionParser.java:344)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPowerIncDecExpression(InternalSpelExpressionParser.java:303)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatProductExpression(InternalSpelExpressionParser.java:281)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatSumExpression(InternalSpelExpressionParser.java:263)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatRelationalExpression(InternalSpelExpressionParser.java:218)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalAndExpression(InternalSpelExpressionParser.java:205)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalOrExpression(InternalSpelExpressionParser.java:192)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatExpression(InternalSpelExpressionParser.java:153)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:131)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:52)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:43)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.getExpression(SPELVariableExpressionEvaluator.java:374)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.obtainComputedSpelExpression(SPELVariableExpressionEvaluator.java:315)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:182)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-02-23 22:10:05.294  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:10:05.308  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:10:05.648  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:10:05.656  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:10:05.662 ERROR 14700 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "blog::[commentList]": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'" (template: "blog" - line 623, col 60)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'" (template: "blog" - line 623, col 60)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: Expression [#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'] @13: EL1051E: Unexpectedly ran out of arguments
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.internalException(InternalSpelExpressionParser.java:1041)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.consumeArguments(InternalSpelExpressionParser.java:477)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodArgs(InternalSpelExpressionParser.java:441)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodOrProperty(InternalSpelExpressionParser.java:760)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatDottedNode(InternalSpelExpressionParser.java:397)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatNode(InternalSpelExpressionParser.java:371)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPrimaryExpression(InternalSpelExpressionParser.java:352)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatUnaryExpression(InternalSpelExpressionParser.java:344)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPowerIncDecExpression(InternalSpelExpressionParser.java:303)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatProductExpression(InternalSpelExpressionParser.java:281)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatSumExpression(InternalSpelExpressionParser.java:263)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatRelationalExpression(InternalSpelExpressionParser.java:218)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalAndExpression(InternalSpelExpressionParser.java:205)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalOrExpression(InternalSpelExpressionParser.java:192)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatExpression(InternalSpelExpressionParser.java:153)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:131)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:52)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:43)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.getExpression(SPELVariableExpressionEvaluator.java:374)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.obtainComputedSpelExpression(SPELVariableExpressionEvaluator.java:315)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:182)
+	... 76 common frames omitted
+
+2021-02-23 22:10:05.664 ERROR 14700 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelParseException: Expression [#dates.format(comment.createTime,'yyyy-MM-dd HH:mm:ss'] @13: EL1051E: Unexpectedly ran out of arguments
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.internalException(InternalSpelExpressionParser.java:1041)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.consumeArguments(InternalSpelExpressionParser.java:477)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodArgs(InternalSpelExpressionParser.java:441)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.maybeEatMethodOrProperty(InternalSpelExpressionParser.java:760)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatDottedNode(InternalSpelExpressionParser.java:397)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatNode(InternalSpelExpressionParser.java:371)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPrimaryExpression(InternalSpelExpressionParser.java:352)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatUnaryExpression(InternalSpelExpressionParser.java:344)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPowerIncDecExpression(InternalSpelExpressionParser.java:303)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatProductExpression(InternalSpelExpressionParser.java:281)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatSumExpression(InternalSpelExpressionParser.java:263)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatRelationalExpression(InternalSpelExpressionParser.java:218)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalAndExpression(InternalSpelExpressionParser.java:205)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalOrExpression(InternalSpelExpressionParser.java:192)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatExpression(InternalSpelExpressionParser.java:153)
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:131)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:52)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:43)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.getExpression(SPELVariableExpressionEvaluator.java:374)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.obtainComputedSpelExpression(SPELVariableExpressionEvaluator.java:315)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:182)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-02-23 22:11:55.322  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:11:55.335  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:11:55.674  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:11:55.682  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:11:55.693 ERROR 14700 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "blog::[commentList]": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#array.length(comment.replyComments)" (template: "blog" - line 632, col 55)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#array.length(comment.replyComments)" (template: "blog" - line 632, col 55)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.GreaterThanExpression.executeGreaterThan(GreaterThanExpression.java:77)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:101)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method length(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 82 common frames omitted
+
+2021-02-23 22:11:55.694 ERROR 14700 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method length(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.GreaterThanExpression.executeGreaterThan(GreaterThanExpression.java:77)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:101)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-02-23 22:12:01.573  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:12:01.588  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:12:01.863  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:12:01.871  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:12:01.879 ERROR 14700 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "blog::[commentList]": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#array.length(comment.replyComments)" (template: "blog" - line 632, col 55)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#array.length(comment.replyComments)" (template: "blog" - line 632, col 55)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.GreaterThanExpression.executeGreaterThan(GreaterThanExpression.java:77)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:101)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method length(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 82 common frames omitted
+
+2021-02-23 22:12:01.880 ERROR 14700 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method length(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.GreaterThanExpression.executeGreaterThan(GreaterThanExpression.java:77)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:101)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-02-23 22:13:04.062  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:13:04.076  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:13:04.420  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:13:04.430  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:15:48.476  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:15:48.491  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:15:48.832  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:15:48.842  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:16:08.502  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=用户2, email=null, content=测试2, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@5e6d51e2]}
+2021-02-23 22:16:08.528  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:16:08.533  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:16:08.551  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:16:51.236  INFO 14700 --- [Thread-49] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:16:51.241  INFO 14700 --- [Thread-49] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:16:51.241  INFO 14700 --- [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-02-23 22:16:51.246  INFO 14700 --- [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-02-23 22:16:51.639  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:16:51.640 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:16:51.640  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:16:52.111  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:16:52.226  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:16:52.647  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:16:52.648  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:16:52.649  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:16:52.701  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:16:52.702  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
+2021-02-23 22:16:52.906  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:16:52.921  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-02-23 22:16:52.921  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-02-23 22:16:52.921  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:16:53.216  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:16:53.216  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:16:53.271  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:16:53.918  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:16:54.141  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:16:54.226  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:16:54.301  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:16:54.541  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:16:54.546  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 2.982 seconds (JVM running for 1551.111)
+2021-02-23 22:16:54.546  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:16:57.202  INFO 14700 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:16:57.205  INFO 14700 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:16:57.207  INFO 14700 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-02-23 22:16:57.215  INFO 14700 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-02-23 22:16:57.579  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:16:57.579 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:16:57.579  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:16:58.041  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:16:58.121  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:16:58.676  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:16:58.679  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:16:58.680  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:16:58.766  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:16:58.766  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1184 ms
+2021-02-23 22:16:58.901  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:16:58.912  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-02-23 22:16:58.912  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-02-23 22:16:58.912  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:16:59.226  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:16:59.226  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:16:59.281  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:16:59.998  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:17:00.241  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:17:00.316  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:17:00.391  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:17:00.666  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:17:00.673  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 3.149 seconds (JVM running for 1557.238)
+2021-02-23 22:17:00.676  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:17:04.908  INFO 14700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-23 22:17:04.911  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-23 22:17:04.915  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-02-23 22:17:04.923  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:17:04.955  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:17:05.342  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:17:05.372  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:17:30.574  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.toIndex', args=[Page request [number: 0, size 4, sort: updateTime: DESC], {}]}
+2021-02-23 22:17:30.595  WARN 14700 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-23 22:17:30.615  WARN 14700 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-23 22:17:30.642  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Result:index
+2021-02-23 22:17:35.438  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:17:35.451  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:17:35.900  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:17:35.908  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:17:57.018  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=用户3, email=null, content=测试3, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:17:57.044  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:17:57.066  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:17:57.079  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:18:25.749  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=用户4, email=null, content=你好, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:18:25.776  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:18:25.783  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:18:25.800  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:20:23.699  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:20:23.715  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:20:24.095  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:20:24.112  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:20:42.849  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=用户5, email=null, content=halo, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:20:42.871  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:20:42.878  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:20:42.896  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:21:26.700  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:21:26.715  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:21:27.059  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:21:27.072  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:22:49.499  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:22:49.511  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:22:49.874  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:22:49.887  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:23:27.248  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:23:27.262  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:23:27.634  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:23:27.648  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:25:15.114  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:25:15.130  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:25:15.494  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:25:15.504  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:25:45.200  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:25:45.213  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:25:45.533  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:25:45.546  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:26:03.569  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=用户6, email=null, content=hello, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=50, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:26:03.593  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:26:03.601  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:26:03.622  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:26:25.549  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=用户7, email=null, content=yes, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=55, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:26:25.571  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:26:25.578  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:26:25.600  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:26:56.436  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=aaa, email=null, content=测试测试, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=51, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:26:56.462  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:26:56.469  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:26:56.491  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:34:47.608  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:34:47.620  INFO 14700 --- [http-nio-8080-exec-5] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:34:47.933  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:34:47.951  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:35:08.895  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=zzf, email=null, content=good, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:35:08.919  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:35:08.926  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:35:08.945  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:35:38.528  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[48, {}]}
+2021-02-23 22:35:38.541  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:35:38.905  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:35:38.922  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:36:10.473  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=zzf, email=null, content=yesifif, avatar=null, adminComment=false, createTime=null, blog=Blog(id=48, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=52, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@561acaf2]}
+2021-02-23 22:36:10.496  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/48
+2021-02-23 22:36:10.504  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/48', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[48, {}]}
+2021-02-23 22:36:10.529  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:39:48.698  INFO 14700 --- [Thread-59] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:39:48.700  INFO 14700 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:39:48.701  INFO 14700 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2021-02-23 22:39:48.705  INFO 14700 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2021-02-23 22:39:49.095  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:39:49.096 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:39:49.096  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:39:49.509  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:39:49.617  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:39:50.083  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:39:50.084  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:39:50.084  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:39:50.137  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:39:50.137  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1038 ms
+2021-02-23 22:39:50.304  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:39:50.312  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2021-02-23 22:39:50.321  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2021-02-23 22:39:50.321  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:39:50.563  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:39:50.563  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:39:50.618  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:39:51.354  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:39:51.617  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:39:51.716  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:39:51.809  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:39:52.043  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:39:52.048  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 3.012 seconds (JVM running for 2928.612)
+2021-02-23 22:39:52.050  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:39:54.727  INFO 14700 --- [Thread-64] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:39:54.730  INFO 14700 --- [Thread-64] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:39:54.733  INFO 14700 --- [Thread-64] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2021-02-23 22:39:54.740  INFO 14700 --- [Thread-64] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2021-02-23 22:39:55.204  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_131 on LAPTOP-ATOJHAIU with PID 14700 (D:\idea项目\MyBlog\target\classes started by 招志锋 in D:\idea项目\MyBlog)
+2021-02-23 22:39:55.205 DEBUG 14700 --- [restartedMain] com.zzf.MyblogApplication                : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-23 22:39:55.205  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : The following profiles are active: dev
+2021-02-23 22:39:55.741  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-23 22:39:55.840  INFO 14700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 5 JPA repository interfaces.
+2021-02-23 22:39:56.296  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-23 22:39:56.298  INFO 14700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-23 22:39:56.298  INFO 14700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-23 22:39:56.384  INFO 14700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-23 22:39:56.384  INFO 14700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1175 ms
+2021-02-23 22:39:56.547  INFO 14700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-23 22:39:56.559  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2021-02-23 22:39:56.567  INFO 14700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2021-02-23 22:39:56.567  INFO 14700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-23 22:39:56.814  INFO 14700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-23 22:39:56.814  INFO 14700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-23 22:39:56.867  INFO 14700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-23 22:39:57.598  WARN 14700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-23 22:39:57.758  INFO 14700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-23 22:39:57.851  INFO 14700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-23 22:39:57.926  WARN 14700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-23 22:39:58.115  INFO 14700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-23 22:39:58.119  INFO 14700 --- [restartedMain] com.zzf.MyblogApplication                : Started MyblogApplication in 2.98 seconds (JVM running for 2934.683)
+2021-02-23 22:39:58.121  INFO 14700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-23 22:40:00.405  INFO 14700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-23 22:40:00.407  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-23 22:40:00.409  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-23 22:40:19.204  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[32, {}]}
+2021-02-23 22:40:19.226  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:40:19.787  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:40:19.803  INFO 14700 --- [http-nio-8080-exec-7] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:41:22.755  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[32, {}]}
+2021-02-23 22:41:22.770  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:41:23.143  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:41:23.148  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:42:54.052  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=zzf, email=null, content=测试, avatar=null, adminComment=false, createTime=null, blog=Blog(id=32, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@1eb1bf1b]}
+2021-02-23 22:42:54.080  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/32
+2021-02-23 22:42:54.088  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:42:54.097  INFO 14700 --- [http-nio-8080-exec-2] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:47:03.327  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[32, {}]}
+2021-02-23 22:47:03.344  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:47:03.829  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:47:03.839  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:47:10.158  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=zzf, email=null, content=测试2, avatar=null, adminComment=false, createTime=null, blog=Blog(id=32, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@1eb1bf1b]}
+2021-02-23 22:47:10.181  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/32
+2021-02-23 22:47:10.190  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:47:10.200  INFO 14700 --- [http-nio-8080-exec-10] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:47:19.855  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[32, {}]}
+2021-02-23 22:47:19.871  INFO 14700 --- [http-nio-8080-exec-1] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:47:20.284  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:47:20.294  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:47:42.251  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=老子, email=null, content=测hi是, avatar=null, adminComment=false, createTime=null, blog=Blog(id=32, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@1eb1bf1b]}
+2021-02-23 22:47:42.272  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/32
+2021-02-23 22:47:42.280  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:47:42.292  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:49:20.262  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.IndexController.blog', args=[32, {}]}
+2021-02-23 22:49:20.278  INFO 14700 --- [http-nio-8080-exec-8] com.zzf.aspect.LogAspect                 : Result:blog
+2021-02-23 22:49:20.703  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:49:20.714  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:49:46.057  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=马子, email=null, content=hi反对hi, avatar=null, adminComment=false, createTime=null, blog=Blog(id=32, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@1eb1bf1b]}
+2021-02-23 22:49:46.079  INFO 14700 --- [http-nio-8080-exec-4] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/32
+2021-02-23 22:49:46.087  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:49:46.104  INFO 14700 --- [http-nio-8080-exec-3] com.zzf.aspect.LogAspect                 : Result:blog :: commentList
+2021-02-23 22:50:01.527  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.submit', args=[Comment(id=null, nickname=测试, email=null, content=嗯, avatar=null, adminComment=false, createTime=null, blog=Blog(id=32, title=null, content=null, articleType=null, topPicture=null, description=null, views=null, published=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=61, nickname=null, email=null, content=null, avatar=null, adminComment=false, createTime=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@1eb1bf1b]}
+2021-02-23 22:50:01.551  INFO 14700 --- [http-nio-8080-exec-9] com.zzf.aspect.LogAspect                 : Result:redirect:/comments/32
+2021-02-23 22:50:01.558  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zzf.controller.CommentController.comments', args=[32, {}]}
+2021-02-23 22:50:01.574  INFO 14700 --- [http-nio-8080-exec-6] com.zzf.aspect.LogAspect                 : Result:blog :: commentList

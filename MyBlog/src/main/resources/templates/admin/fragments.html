@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <!--让当前viewport的宽度等于设备的宽度，同时不允许用户手动缩放。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title th:replace="${title}">详情页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../static/css/m.css" th:href="@{/css/m.css}">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.css" th:href="@{/lib/editormd/css/editormd.css}">
+</head>
+
+<!--导航 -->
+<!--inverted反转颜色,不加就白色，加就黑色，其他颜色可以在后面加，
+attached去除圆角-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <!--反色菜单-->
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui olive header item">后台管理</h2>
+            <!--m-mobile-hide手机端隐藏-->
+            <a th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>博客</a>
+            <a th:href="@{/admin/types}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+            <a th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}">
+                        <span th:text="${session.user.username}">zzf</span>
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu-toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--底部-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <!--容器的对齐方式-->
+    <!--居中-->
+    <div class="ui center aligned container">
+        <!--以网格的形式分开一列一列,会分为16部分-->
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">链接</h4>
+                <div class="ui inverted link list">
+                    <a href="https://github.com/zzf-ai" class="item">Github</a>
+                    <a href="https://gitee.com/zzfwd" class="item">Gitee</a>
+                    <a href="https://blog.csdn.net/qq_43610675" class="item">CSDN博客</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                <div id="lastestblog-container">
+                    <div class="ui inverted link list" th:fragment="lastestblogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${lastestblogs}" th:text="${blog.title}">最新博客</a>
+                        <!--/*-->
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <!--*/-->
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item" th:text="#{footer.qq}">QQ</a>
+                    <a href="#" class="item" th:text="#{footer.email}">Email</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">关于网站技术</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">
+                    前端：semantic-ui | 后端：SpringBoot+thymeleaf+Jpa+MySQL
+                </p>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">
+                    插件：editormd(markdown编辑器)、qrcode(二维码生成)、tocbot(目录生成)
+                </p>
+            </div>
+        </div>
+        <!--分割线-->
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021 Designed By ZZF</p>
+    </div>
+</footer>
+
+<th:block th:fragment="script">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <script>
+        $(document).ready(function () {
+            $('#lastestblog-container').load(/*[[@{/footer/lastest}]]*/"/footer/lastest");//动态更新底部最新博客
+        });
+    </script>
+</th:block>
+<body>
+
+</body>
+</html>

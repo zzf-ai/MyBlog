@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--让当前viewport的宽度等于设备的宽度，同时不允许用户手动缩放。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>发布页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/m.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.css">
+</head>
+<body>
+<!--/*/<th:block th:replace="admin/fragments :: script">/*/-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="../../static/lib/editormd/editormd.min.js"></script>
+<!--/*/</th:block>/*/-->
+    <script>
+
+        //初始化MarkDown编辑器
+        var testEditor;
+        $(function() {
+            testEditor = editormd("md-content", {
+                width   : "100%",
+                height  : 1000,
+                syncScrolling : "single",
+                path    : "/lib/editormd/lib/",
+            });
+        });
+
+        $(document).ready(function(){
+            //打开或合并菜单
+            $('.menu-toggle').click(function () {
+                //去除或加上对应的class
+                $('.m-item').toggleClass('m-mobile-hide');
+            });
+
+            $('.ui.dropdown').dropdown({
+                on:'hover'
+            });
+
+            //前端校验
+            $('.ui.form').form({
+                fields:{
+                    articleType:{
+                        identifier:'articleType',
+                        rules:[{
+                            type:'empty',
+                            prompt:'请输入文章类型!'
+                        }]
+                    },
+                    title:{
+                        identifier:'title',
+                        rules:[{
+                            type:'empty',
+                            prompt:'请输入博客标题!'
+                        }]
+                    },
+                    content:{
+                        identifier:'content',
+                        rules:[{
+                            type:'empty',
+                            prompt:'请输入博客内容!'
+                        }]
+                    },
+                    typesId:{
+                        identifier:'typesId',
+                        rules:[{
+                            type:'empty',
+                            prompt:'请输入博客分类!'
+                        }]
+                    },
+                    tagIds:{
+                        identifier:'tagIds',
+                        rules:[{
+                            type:'empty',
+                            prompt:'请输入博客标签!'
+                        }]
+                    },
+                    topPicture:{
+                        identifier:'topPicture',
+                        rules:[{
+                            type:'empty',
+                            prompt:'请输入博客首图URL!'
+                        }]
+                    }
+                }
+            });
+
+
+            $('#save-btn').click(function () {
+                $("[name='published']").val(false);
+            });
+            $('#publish-btn').click(function () {
+                $("[name='published']").val(true);
+            });
+
+            $('.ui.type.dropdown')
+                .dropdown({
+                    allowAdditions: true,
+                    maxSelections: 1
+                })
+            ;
+
+            $('.ui.tag.dropdown')
+                .dropdown({
+                    allowAdditions: true
+                })
+            ;
+        });
+    </script>
+    <!--导航 -->
+    <!--inverted反转颜色,不加就白色，加就黑色，其他颜色可以在后面加，
+    attached去除圆角-->
+    <nav th:replace="admin/fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <!--反色菜单-->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item">后台管理</h2>
+                <!--m-mobile-hide手机端隐藏-->
+                <a href="" class="m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                            zzf
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu-toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" class="active item">新增</a>
+                <a href="#" th:href="@{/admin/blogs}" class="item">列表</a>
+            </div>
+        </div>
+    </div>
+    <!--中间部分-->
+    <div class="m-padded-tb-large">
+        <div class="ui container" style="width: 90%">
+           <form action="#" th:object="${blog}" th:action="@{/admin/blogs}" method="post" class="ui form">
+               <input type="hidden" name="published">
+               <input type="hidden" name="id" th:value="*{id}">
+               <div class="required field">
+                   <div class="ui left labeled input">
+                       <div class="ui selection compact dropdown label">
+                           <input type="hidden" name="articleType" th:value="*{articleType}">
+                           <i class="dropdown icon"></i>
+                           <div class="default text">文章类型</div>
+                           <div class="menu">
+                               <div class="item" data-value="原创">原创</div>
+                               <div class="item" data-value="转载">转载</div>
+                           </div>
+                       </div>
+                       <input type="text" name="title" placeholder="标题" th:value="*{title}">
+                   </div>
+               </div>
+               <div class="required field">
+                   <div id="md-content" style="z-index: 1 !important;">
+                       <textarea placeholder="博客内容" name="content" style="display:none;" th:text="*{content}">[TOC]
+
+#### Disabled options
+
+- TeX (Based on KaTeX);
+- Emoji;
+- Task lists;
+- HTML tags decode;
+- Flowchart and Sequence Diagram;
+                        </textarea>
+                   </div>
+               </div>
+
+               <div class="two fields">
+                   <div class="required field">
+                       <div class="ui left labeled action input">
+                           <label class="ui compact blue basic label">分类</label>
+                           <div class="ui type fluid multiple search selection dropdown">
+                               <input type="hidden" name="typesId" th:value="*{type}!=null ? *{type.id}">
+                               <i class="dropdown icon"></i>
+                               <div class="default text">分类</div>
+                               <div class="menu">
+                                   <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">错误日志</div>
+                               </div>
+                           </div>
+                           <a th:href="@{/admin/types}" class="ui compact button">分类管理</a>
+                       </div>
+                   </div>
+                   <div class="field">
+                       <div class="ui left labeled action input">
+                           <label class="ui compact blue basic label">标签</label>
+                           <div class="ui tag fluid selection multiple search dropdown">
+                               <input type="hidden" name="tagIds" th:value="*{tagIds}">
+                               <i class="dropdown icon"></i>
+                               <div class="default text">标签</div>
+                               <div class="menu">
+                                   <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}" th:text="${tag.name}">Java</div>
+                                   <!--/*-->
+                                   <div class="item" data-value="2">MySQL</div>
+                                   <!--*/-->
+                               </div>
+                           </div>
+                           <a th:href="@{/admin/tags}" class="ui compact button">标签管理</a>
+                       </div>
+                   </div>
+               </div>
+               <!--<div class="required field">
+                   <div class="ui left labeled action input">
+                       <label class="ui compact blue basic label">首图</label>
+                       <input type="text" th:value="*{topPicture}" name="topPicture" placeholder="文章首图的引用地址">
+                   </div>
+               </div>-->
+
+               <div class="ui error message"></div>
+               <div class="ui right aligned container" style="width: 100%">
+                   <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
+                   <button type="button" id="save-btn" class="ui submit button">保存</button>
+                   <button type="button" id="publish-btn" class="ui submit blue button">发布</button>
+               </div>
+           </form>
+        </div>
+    </div>
+
+    <!--底部-->
+    <footer th:replace="admin/fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <!--容器的对齐方式-->
+        <!--居中-->
+        <div class="ui center aligned container">
+            <!--以网格的形式分开一列一列,会分为16部分-->
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">链接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Github</a>
+                        <a href="#" class="item">CSDN</a>
+                        <a href="#" class="item">Gitee</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                        <a href="#" class="item">最新博客</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">QQ</a>
+                        <a href="#" class="item">Email</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">关于我</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">爱学习，爱代码的小菜鸡</p>
+                </div>
+            </div>
+            <!--分割线-->
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021 Designed By ZZF</p>
+        </div>
+    </footer>
+</body>
+</html>

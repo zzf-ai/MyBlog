@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <title>404</title>
+</head>
+<body>
+<nav th:replace="fragments :: menu(0)"></nav>
+<br>
+<br>
+<br>
+<div class="m-container-small m-padded-tb-massive">
+    <div class="ui error message m-padded-tb-massive">
+        <div class="ui container">
+            <h2>500</h2>
+            <p>
+                后台出错了
+            </p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>
